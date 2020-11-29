@@ -42,15 +42,6 @@ input {
   font-family: "Nerko One", cursive;
 }
 
-.btn {
-  border: none;
-  outline: none;
-  background: 0;
-  font-family: "Nerko One", cursive;
-  cursor: pointer;
-  font-size: 22px;
-}
-
 .login__container {
   background-color: wheat;
   text-align: center;
@@ -61,4 +52,11 @@ input {
   flex-direction: column;
   align-items: center;
   margin: 60px;
+}
+
+.none {
+  display: none;
+}
+.showing {
+  display: block;
 }
