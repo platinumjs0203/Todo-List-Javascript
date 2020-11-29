@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nerko One", cursive;
+  background-color: tomato;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 48px;
+}
+
+input {
+  margin: 10px;
+}
+
+.login {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  margin: 10px;
+}
+
+.avatar img {
+  width: 220px;
+  height: 220px;
+}
+
+.input {
+  text-align: center;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background: 0;
+  font-family: "Nerko One", cursive;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: 0;
+  font-family: "Nerko One", cursive;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.login__container {
+  background-color: wheat;
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+}
