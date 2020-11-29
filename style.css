@@ -18,6 +18,18 @@ input {
   margin: 10px;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.DTW {
+  background-color: teal;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .login {
   text-align: center;
   display: flex;
