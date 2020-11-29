@@ -35,7 +35,7 @@ input {
 
 .input {
   text-align: center;
-  font-size: 22px;
+  font-size: 36px;
   border: none;
   outline: none;
   background: 0;
@@ -56,11 +56,18 @@ input {
 
 .none {
   display: none;
+  animation: fade 1.8s ease;
 }
 .showing {
   display: block;
+  animation: fade 1.8s ease;
 }
 
-.clock-js h1 {
-  font-size: 60px;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

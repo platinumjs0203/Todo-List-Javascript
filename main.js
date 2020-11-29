@@ -9,12 +9,12 @@ function saveName(text){
     localStorage.setItem(USER_LS, text);    
 }
 function handleSubmit(a){
-    h1.classList.add("none");
     input.classList.add("none");
     h1.classList.add("showing")
     h1.innerHTML = `Hello ${a}`;
     avatar.classList.add("none");
-    clock.classList.remove("none");
+    clock.classList.add("showing");
+    day.classList.add("showing");
 }
 function test(e){
     e.preventDefault();
@@ -37,13 +37,19 @@ function loadName(){
 //Clock
 const clock = document.querySelector(".clock-js");
 const clockTitle = clock.querySelector("h1");
+const day = document.querySelector(".day-js")
+const dayTitle = day.querySelector("h1");
 
 function getTime(){
     const d = new Date();
     const h = d.getHours();
     const m = d.getMinutes();
     const s = d.getSeconds();
-    clockTitle.innerText = `${h < 10 ? `0${h}` : h}:${m < 10 ? `0${m}` : m}:${s < 10 ? `0${s}` : s}`
+    clockTitle.innerText = `${h < 10 ? `0${h}` : h}시 ${m < 10 ? `0${m}` : m}분 ${s < 10 ? `0${s}`: s}초`
+
+    const day = d.getDate();
+    const month = d.getMonth();
+    dayTitle.innerText = `${month}월 ${day}일`
 }
 
 function init(){
